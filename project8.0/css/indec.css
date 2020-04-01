@@ -1,0 +1,55 @@
+.container
+{
+  text-align: center;
+  padding: 30px;
+
+}
+
+.container .switchcolors
+{
+  list-style: none;
+  text-align: center;
+}
+.container  .switchcolors  li
+{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: yellow;
+}
+.container  .switchcolors  li:first-child
+{
+  background-color: #cc0000;
+
+}
+.container  .switchcolors li:nth-child(2)
+{
+  background-color: #4d0000;
+
+}
+.container  .switchcolors  li:nth-child(3)
+{
+  background-color:#99ff66;
+
+}
+.container  .switchcolors  li:nth-child(4)
+{
+  background-color: 	 #ff1aff;
+
+}
+.container  .switchcolors  li:last-child
+{
+  background-color: #996633;
+
+}
+.changes div
+{
+  width: 20%;
+  height: 50px;
+  padding: 50px;
+  background-color: var(--maincolor);
+  margin: 10px;
+  display: inline-block;
+}

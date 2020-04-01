@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>simple exercise</title>
+    <link rel="stylesheet" href="css/indec.css"/>
+  </head>
+  <body>
+
+<div id="myapp" class="container" :style="{'--maincolor':color}">
+<ul class="switchcolors">
+    <li data-color="#cc0000"   @click="  switchcolors"></li>
+    <li data-color="#4d0000" @click="  switchcolors"></li>
+    <li data-color="#99ff66" @click="  switchcolors"></li>
+    <li data-color="#ff1aff" @click="  switchcolors"></li>
+    <li data-color="#996633" @click="  switchcolors"></li>
+
+
+</ul>
+<div class="changes">
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+
+
+<script src="js/vue.js"></script>
+<script>
+var app= new Vue({
+
+  el:"#myapp",
+  data:{
+    color:" #ff8080",
+
+},
+methods:
+{
+  switchcolors(event){
+    this.color=event.target.getAttribute("data-color");
+  }
+}
+});
+
+</script>
+
+  </body>
+</html>
